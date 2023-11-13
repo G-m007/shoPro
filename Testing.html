@@ -5,6 +5,19 @@
 	<title>AMZ DAta</title>
     <link rel="stylesheet" href="styles.css"> 
 
+    <title>URL Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+
 	<!-- INCLUDING JQUERY-->
 	<script src= 
 "https://code.jquery.com/jquery-3.5.1.js"> 
@@ -68,7 +81,6 @@
                 <button class="openbtn" onclick="openNav()">&#9776;</button>
               </div>
             <div class="logo">
-                <img src="shop.avif" alt="logo" class="logo1" height="40px" width="60px">
                 <a href="#">SHOPro</a>
             </div>
             <div class="topnav" id="myTopnav">
@@ -110,14 +122,14 @@
 		
 
 		td { 
-			background-color: #4cd7b2; 
-			border: 1px solid black; 
+			background-color: #ffffff; 
+			border: 5px solid black; 
 		} 
 
 		th, 
 		td { 
 			font-weight: bold; 
-			border: 1px solid black; 
+			border: 3px solid rgb(101, 119, 109); 
 			padding: 10px; 
 			text-align: center; 
 		} 
@@ -173,8 +185,8 @@
 							student += '<td>' + 
 								value.rating + '</td>'; 
                             
-							student += '<td>' +
-								value.url + '</td>'; 
+							student += `<td><a href="${value.url}">Buy Now<a/>` +
+								 '</td>'; 
 
 							student += '</tr>'; 
 						}); 
