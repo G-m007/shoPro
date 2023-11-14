@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shopro</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="index2.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<!-- INCLUDING JQUERY-->
+<script src= 
+"https://code.jquery.com/jquery-3.5.1.js"> 
+	</script>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
+
+
+    <script>function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+
+
+
+      function search() {
+  let input = document.getElementById('searchbar').value
+  input = input.toLowerCase();
+  let x = document.querySelector('#list-holder');
+  x.innerHTML = ""
+
+  for (i = 0; i < data.length; i++) {
+    let obj = data[i];
+
+    if (obj.Name.toLowerCase().includes(input)) {
+      const elem = document.createElement("li")
+      elem.innerHTML = `${obj.title}`
+      x.appendChild(elem)
+    }
+  }
+}
+      </script>
+</head>
+<body>
+    
+
+  <header>
+    <nav>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a target="_blank" href="../index.html">Mobiles</a>                
+            <a target="_blank" href="index2.html">Laptops</a>                
+            <a target="_blank" href="https://www.amazon.in/b/?node=1389396031&amp;ref_=Oct_d_odnav_d_1389375031_4&amp;pd_rd_w=kMJrp&amp;content-id=amzn1.sym.7913a1eb-33db-4a38-8b01-4c7c31f95733&amp;pf_rd_p=7913a1eb-33db-4a38-8b01-4c7c31f95733&amp;pf_rd_r=PCP7EE7AVJS1HC89EDHE&amp;pd_rd_wg=qNmqn&amp;pd_rd_r=86a05ad0-129e-4c0e-bf04-8b8de90e280f&_encoding=UTF8&tag=shopro0f-21&linkCode=ur2&linkId=fa1cef95c8f2ba7f9efcd50c6afd29c2&camp=3638&creative=24630">Televisions</a>               
+            <a target="_blank" href="https://www.amazon.in/b?node=1389402031&amp;ref_=MH1_Accessories&_encoding=UTF8&tag=shopro0f-21&linkCode=ur2&linkId=db8dd73047bc9b9fc5cfdf592af316d7&camp=3638&creative=24630">Accessories</a>              
+        </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+          </div>
+        <div class="logo">
+
+            <a href="#">SHOPro</a>
+        </div>
+        <div class="topnav" id="myTopnav">
+          <a href="#home" class="active">Home</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <div class="dropdown">
+            <button class="dropbtn">Categories
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <a href="#about">About</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search..." >
+            <button type="submit">Search</button>
+          </div>  
+    </nav>
+    
+</header>
+
+<h1><b>Laptops</b></h1>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="https://yt3.googleusercontent.com/05lhMeAH6tZrPIUsp2yHNz3DwzhKbDUQcxcY0_qeXVyZttR_pktBzw0FcLUSR6D4fVqsEgL3ZO0=s900-c-k-c0x00ffffff-no-rj" alt="Sandwich" style="width:100%" onclick="window.open('apple.html','_blank')">
+      <h3>Apple<h3>
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Lenovo_Corporate_Logo.png" alt="Cherries" style="width:100%" onclick="window.open('lenovo.html','_blank')">
+      <h3>Lenovo</h3>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://brandcentral.hp.com/content/dam/sites/brand-central/elem-logo/images/Logo_1_do.jpeg" alt="Pasta and Wine" style="width:100%" onclick="window.open('hp.html','_blank')">
+      <h3>Hp</h3>
+    </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="https://images.samsung.com/is/image/samsung/assets/in/about-us/brand/logo/mo/256_144_1.png?$512_N_PNG$" alt="Popsicle" style="width:100%" onclick="window.open('samsung.html','_blank')">
+      <h3>Samsung</h3>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Dell_logo_2016.svg/2048px-Dell_logo_2016.svg.png" alt="Salmon" style="width:100%" onclick="window.open('dell.html','_blank')">
+      <h3>Dell</h3>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="https://static.vecteezy.com/system/resources/previews/020/927/146/non_2x/xiaomi-brand-logo-phone-symbol-with-name-white-design-chinese-mobile-illustration-with-orange-background-free-vector.jpg" alt="Sandwich" style="width:100%" onclick="window.open('mi.html','_blank')">
+      <h3>Mi</h3>
+      
+  </div>
+  
+  <!-- Third Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="https://1000logos.net/wp-content/uploads/2016/09/Acer-Logo.png" alt="Popsicle" style="width:100%" onclick=" window.open('acer.html','_blank')">
+      <h3>Acer</h3>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="https://dlcdnimgs.asus.com/websites/IN/Sno/91059.jpg" alt="Salmon" style="width:100%" onclick=" window.open('asus.html','_blank')" >
+      <h3>Asus</h3>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="https://cdn.dribbble.com/users/3144264/screenshots/16080159/media/76c03dd932c1e3f797c3fb5869826de9.png" alt="Sandwich" style="width:100%"onclick=" window.open('msi.html','_blank')">
+      <h3>MSI</h3>
+ 
+    
+  </div>
+
+  <!-- fourth Photo Grid-->
+<!-- 
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="m14.webp" alt="Popsicle" style="width:100%">
+      <h3></h3>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="m15.webp" alt="Salmon" style="width:100%">
+      <h3></h3>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="m16.webp" alt="Sandwich" style="width:100%">
+      <h3></h3>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="m17.jpg" alt="Croissant" style="width:100%">
+      <h3></h3>
+      
+    </div>
+  </div>
+</div>
+-->
+  
+  
+  </div>
+  
+  <hr id="about">
+
+</div>
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
