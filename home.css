@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: border-box;
+}
+
+.navbar{
+    height: 60px;
+    background-color: #250a32;
+    color:rgb(201, 202, 217);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.nav-logo{
+    height:55px;
+    width: 100px;
+}
+.logo{
+    height:55px;
+    width: 100%;
+}
+.border{
+    border: 2px solid transparent;
+}
+
+.border:hover{
+    border: 2px solid rgb(47, 3, 58);
+}
+.add-icon{
+    display: flex ;
+    align-items:center;
+}
+
+.addf{
+    font-size: 0.85rem;
+    margin-left: 30px;
+}
+.adds{
+    font-size: 1.2rem;
+    margin-left: 5px;
+    align-items: center;
+}
+.location{
+    margin-left: 20px;
+}
+.name
+{
+    font-size:1.6rem ;
+    align-items: center;
+    margin-top: 15px;
+    font-weight: 1000;
+    
+}
+.nav-search{
+    display: flex;
+    width: 920px;
+    height: 40px;
+    border-radius: 3px;
+    justify-content: space-evenly;
+    margin-left:25px
+}
+.nav-search:hover{
+    border:2px solid rgb(40, 2, 42);
+}
+.search-select
+{
+    background-color: white;
+    width: 44px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: none;
+    font-weight: 300;
+}
+.search-icon
+{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(8, 4, 11);
+    size: 1.2rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color:rgb(242, 234, 234)
+    
+
+}
+.search-input
+{
+    width:100%;
+    font-size: 1rem;
+    border: none;
+    font-weight: 400;
+}
+.nav-signin
+{
+ margin-left:5px;
+ font-size: 1rem;
+ font-weight: 700;
+ margin: 50px;
+}
+
+
+.nav-order
+{
+    border: 50px;
+    font-size: 1rem;
+    font-weight: 700;  
+    margin-left: 10px;
+}
+.order{
+    font-size: 0.87rem;
+}
+
+.nav-cart i {
+    font-size: 30px;
+}
+.nav-cart{
+    margin-left: 25px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.panel{
+    height: 45px;
+    background-color: rgb(90, 25, 98);
+    color: rgb(246, 239, 246);
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    font-weight: 400;
+}
+.panel-options
+{
+    display: flex;
+}
+
+.help-text{
+    width: 44px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: none;
+    font-weight: 300;
+    margin-left: 10px;
+    border: none;
+    font-weight: 400;
+    background-color: rgb(90, 25, 98);
+    color: rgb(246, 239, 246);
+}
+
+
+.info{
+    margin-left:850px; margin-top:5px;
+    font-weight: 550;
+}
+.menu{
+    margin-left:1px
+}
+
+.pborder{
+    border: 2px solid transparent;
+}
+
+.pborder:hover{
+    border: 2px solid rgb(221, 162, 236);
+}
+
+.panel-all:hover{
+    color:white;
+}
+
+
+
+.continue-option1
+{
+    background-color: rgb(88, 41, 106);
+    width: 200px;
+    border: 3px solid rgb(72, 7, 75);
+    border-color: rgb(240, 239, 247);
+    padding:20px;
+    margin: 10px;
+    position:relative;
+    top: 70px;
+    left: 400px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-style: inherit;
+    color: rgb(11, 3, 3);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration-skip: 20px;
+    
+}
+
+.continue-option2
+{
+    background-color: rgb(88, 41, 106);
+    width: 200px;
+    border: 3px solid rgb(72, 7, 75);
+    border-color: rgb(240, 239, 247);
+    padding:20px;
+    margin: 10px;
+    position:relative;
+    top: 70px;
+    left: 400px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-style: inherit;
+    color: rgb(14, 5, 5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.continue-option3
+{
+    background-color: rgb(88, 41, 106);
+    width: 200px;
+    border: 3px solid rgb(72, 7, 75);
+    border-color: rgb(240, 239, 247);
+    color: rgb(15, 4, 4);
+    padding:20px;
+    margin: 10px;
+    position:relative;
+    top: 70px;
+    left: 400px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius:10px;
+    font-weight: bold;
+    font-style: inherit;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.register
+{
+    font-weight: 700;
+    border-radius: 5px;
+    border: 2px solid rgb(157, 108, 162);
+}
+.register:hover{
+    border-color: rgb(157, 130, 160);
+}
+
+.login:hover{
+    border-color:  rgb(157, 130, 160);
+}
+
+.login
+{
+    font-weight: 700;
+    border-radius: 4px;
+    border-color:  rgb(157, 130, 160);
+    
+}
+
+.list{
+    width: 300px;
+    font-size: larger;
+    font-weight: 700;
+    color: rgb(52, 1, 57);
+    margin-left: 20px;
+    margin-top:40px;
+    font-style: oblique;   
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.br{
+    width: 300px;
+    font-size: larger;
+    font-weight: 1400;
+    color: rgb(60, 14, 67);
+    margin: 20px;
+    font-style: oblique;    
+}
+.list :hover{
+    color: rgb(194, 164, 194);
+}
+.horizontal{
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+}
+.middle{
+    margin-top: 25px;
+}
+.middler
+{
+    display: flex;
+    width: 1450px;
+    height:300px;
+    background-color: rgb(88, 41, 106);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Headphones{
+    background-image: url(headphones.jpeg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    width: 320px;
+    height:280px;
+    align-items:self-end;
+    border: 4px solid black;
+    background-color: white;
+    font-weight: 700;
+    font-size:x-large;
+    border-radius: 30px;
+    text-align: center;
+    text-shadow:20px;
+
+}
+
+.Laptops
+{
+    background-image: url(laptops.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 320px;
+    height:280px;
+    border: 4px solid black;
+    background-position: center;
+    background-color: white;
+    font-weight: 700;
+    font-size:x-large;
+    border-radius: 30px;
+    text-align: center;
+    text-shadow:20px;    
+}
+
+.Televisions
+{
+    background-image: url(tv.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 320px;
+    height:280px;
+    border: 4px solid black;
+    background-color: white;
+    background-position: center;
+    font-weight: 700;
+    font-size:x-large;
+    border-radius: 30px;
+    text-align: center;
+    text-shadow:20px;
+}
+
+.Mobiles{
+    background-image: url(mobiles.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 320px;
+    height:280px;
+    border: 4px solid black;
+    background-color: white;
+    font-weight: 700;
+    font-size:x-large;
+    border-radius: 30px;
+    text-align: center;
+    text-shadow:20px;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    background-color: rgb(211, 211, 211);
+    height:200px;
+    align-content: center;
+    text-align: center;
+    font-size: 20px;
+
+    
+}
+
+.textfoot{
+    font-style: oblique;
+}
