@@ -306,7 +306,7 @@ a{
 }
 
 .Headphones{
-    background-image: url(headphones.jpeg);
+    background-image: url("https://cdn.ndtv.com/tech/images/gadgets/Samsung_Level_Series.jpg");
     background-repeat: no-repeat;
     background-size: 80%;
     width: 320px;
@@ -324,7 +324,7 @@ a{
 
 .Laptops
 {
-    background-image: url(laptops.jpeg);
+    background-image: url("https://i.dell.com/sites/csimages/Banner_Imagery/all/laptop-xps-franchise-page-hero-1920x1440-xs9320nt-sl-xs9315nt-bl.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 320px;
@@ -341,7 +341,7 @@ a{
 
 .Televisions
 {
-    background-image: url(tv.jpg);
+    background-image: url("https://www.sony.co.in/image/5a01a9fdb85a075ce2d715c1254b08ab?fmt=pjpeg&bgcolor=FFFFFF&bgc=FFFFFF&wid=2515&hei=1320");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 320px;
@@ -357,7 +357,7 @@ a{
 }
 
 .Mobiles{
-    background-image: url(mobiles.jpeg);
+    background-image: url("https://images.samsung.com/is/image/samsung/assets/in/explore/brand/5-best-android-mobile-phones-2022-in-india/banner-mobile-720x761-080422.jpg?$720_N_JPG$");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
