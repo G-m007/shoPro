@@ -117,77 +117,44 @@ hr {
 }
   </style>
     <header>
-        <div class="navbar">
-            <div class="nav-logo border">
-                <div class="logo">
-                    <p class="name">SHOPro</p>
-                </div>
-                
+      <nav>
+          <div id="mySidebar" class="sidebar">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a target="_blank" href="https://www.amazon.in/b?node=1389401031&amp;ref_=MH1_Smartphones&_encoding=UTF8&tag=shopro0f-21&linkCode=ur2&linkId=a3289382380fdab47a92cd8ffd27d402&camp=3638&creative=24630">Mobiles</a>                
+              <a target="_blank" href="https://www.amazon.in/b?node=1375424031&_encoding=UTF8&tag=shopro0f-21&linkCode=ur2&linkId=8e6f65aa03b95137ec91ffd45eeece86&camp=3638&creative=24630">Laptops</a>                
+              <a target="_blank" href="https://www.amazon.in/b/?node=1389396031&amp;ref_=Oct_d_odnav_d_1389375031_4&amp;pd_rd_w=kMJrp&amp;content-id=amzn1.sym.7913a1eb-33db-4a38-8b01-4c7c31f95733&amp;pf_rd_p=7913a1eb-33db-4a38-8b01-4c7c31f95733&amp;pf_rd_r=PCP7EE7AVJS1HC89EDHE&amp;pd_rd_wg=qNmqn&amp;pd_rd_r=86a05ad0-129e-4c0e-bf04-8b8de90e280f&_encoding=UTF8&tag=shopro0f-21&linkCode=ur2&linkId=fa1cef95c8f2ba7f9efcd50c6afd29c2&camp=3638&creative=24630">Televisions</a>               
+              <a target="_blank" href="https://www.amazon.in/b?node=1389402031&amp;ref_=MH1_Accessories&_encoding=UTF8&tag=shopro0f-21&linkCode=ur2&linkId=db8dd73047bc9b9fc5cfdf592af316d7&camp=3638&creative=24630">Accessories</a>              
+          </div>
+            
+            <div id="main">
+              <button class="openbtn" onclick="openNav()">&#9776;</button>
             </div>
-
-            <div class="nav-address">
-                <p class="addf">Deliver to</p>
-                <div class="add-icon">
-                    <i class="fa-solid fa-location-dot location"></i>
-                    <p class="adds">India</p>
-                </div>
+          <div class="logo">
+              <a href="#">SHOPro</a>
+          </div>
+          <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <div class="dropdown">
+              <button class="dropbtn">Categories
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
             </div>
-
-            <div class="nav-search">
-                <select name="" id="" class="search-select">
-                    <option value="">ALL</option>
-                    <option value="">Mobiles and accessories</option>
-                    <option value="">Home audio</option>
-                    <option value="">Tablets</option>
-                    <option value="">Computers and accessories</option>
-                    <option value="">Headphones,Earbuds &accessories</option>
-                    <option value="">Power Accessories</option>
-                    <option value="">Camera and Photography</option>
-                </select>
-                    <input class="search-input" placeholder="Search Electronics">
-                    <div class="search-icon">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-            </div>
-
-            <div class="nav-signin border">
-                <p class="jsaccount"><span>Account & </span></p>
-                <p><span>Lists</span></p>
-            </div>
-
-            <div class="nav-order border">
-                <p class="order js"><span>Orders and </span></p>
-                <p><span>Returns</span></p>
-            </div>
-
-            <div class="nav-cart">
-                <i class="fa-solid fa-cart-shopping cart-icon"></i>
-                Cart
-            </div>
-
-        </div>
-    
-    <div class="panel">
-        <div  style="margin-left:15px;margin-top:5px;"class="panel-all">
-            <i class="fa-solid fa-bars menu"></i>
-            All catogories
-        </div>
-        <div class="panel-options">
-            <p class="pborder" style="margin-left: 15px;margin-top:5px;">Offers</p>
-            <p class="pborder" style="margin-left: 15px;margin-top:5px;">Gift boxes</p>
-            <p class="pborder" style="margin-left: 15px;margin-top:5px;">Project menu</p>
-            <select class="help-text"name="help" id="">
-                <option style="margin-left: 35px;">help</option>
-                <option>
-                    <p>Welcome to our Help Center! Whether you have questions about our products, shipping, or returns, you'll find answers here.
-                    </p><br>
-                    
-                </option>
-            </select>
-            <p class="info">Shop deals in Electronics</p>
-        </div>
-    </div>         
-    </header>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
+          <div class="search-bar">
+              <input type="text" placeholder="Search..." >
+              <button type="submit">Search</button>
+            </div>  
+      </nav>
+  </header>
     <div class="horizontal">
     <div class="list">
         <div  class="br"><a  href="mobiles.html" style="color: white;">Mobiles</a></div><br>
@@ -223,10 +190,10 @@ hr {
 
     <div class="middler">
         
-            <div class="Headphones"></div>
-            <div class="Laptops"></div>
-            <div class="Mobiles"></div>
-            <div class="Televisions"></div>
+            <a href=""><div class="Headphones"></div></a>
+            <a href="./Laptops/index2.html"><div class="Laptops"></div></a>
+            <a href="mobiles.html"><div class="Mobiles"></div></a>
+            <a href=""><div class="Televisions"></div></a>
         
 
     </div>
