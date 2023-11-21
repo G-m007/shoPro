@@ -17,6 +17,32 @@
             text-align: left;
         }
     </style>
+<style>
+  /* Add some basic styling for better presentation */
+  #result {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    position: absolute;
+    width: 200px;
+    background-color: #100a0a;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  #result li {
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  #result li:hover {
+    background-color: #6c6262;
+  }
+  #result a{
+    color: white;
+  }
+</style>
 
 	<!-- INCLUDING JQUERY-->
 	<script src= 
@@ -101,13 +127,74 @@
               <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
             <div class="search-bar">
-                <input type="text" placeholder="Search..." >
-                <button type="submit">Search</button>
+              <input type="text" placeholder="Search..." id="searchInput" oninput="search()" >
+              <button type="submit">Search</button>
+              <ul id="result"></ul>
               </div>  
         </nav>
     </header>
    
-    
+    <script>
+      // Assuming data.json is in the same directory as this HTML file
+      const jsonFile = './hp.json';
+  
+      // Function to perform the search
+      function search() {
+        // Get the input value
+        const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+  
+        // Fetch the JSON data
+        fetch(jsonFile)
+          .then(response => response.json())
+          .then(data => {
+            // Filter the data based on the search term
+            const results = data.filter(item => item.title.toLowerCase().includes(searchTerm));
+  
+            // Display the results in the dropdown
+            displayResults(results);
+          })
+          .catch(error => console.error('Error fetching JSON:', error));
+      }
+  
+      // Function to display search results in the dropdown
+      function displayResults(results) {
+        const resultUl = document.getElementById('result');
+        resultUl.innerHTML = ''; // Clear previous results
+  
+        if (results.length === 0) {
+          resultUl.style.display = 'none'; // Hide the dropdown if no results
+        } else {
+          results.forEach(item => {
+            const truncatedTitle = truncateTitle(item.title, 20); // Truncate to a maximum of 20 characters
+            const resultItem = document.createElement('li');
+            resultItem.innerHTML = `<strong>${truncatedTitle}</strong> <br> <strong>${item.price}</strong> - <a href=${item.url}>Buy<a>`;
+            resultItem.onclick = () => {
+              // Handle the click on a result (you can customize this part)
+              alert(`You selected: ${item.title}`);
+            };
+            resultUl.appendChild(resultItem);
+          });
+          resultUl.style.display = 'block'; // Show the dropdown
+        }
+      }
+  
+      // Close the dropdown if the user clicks outside of it
+      document.onclick = function(event) {
+        if (!event.target.matches('#searchInput') && !event.target.matches('#result li')) {
+          const resultUl = document.getElementById('result');
+          resultUl.style.display = 'none';
+        }
+      };
+  
+      // Function to truncate a string to a specified length
+      function truncateTitle(title, maxLength) {
+        if (title.length > maxLength) {
+          return title.substring(0, maxLength) + '...';
+        } else {
+          return title;
+        }
+      }
+    </script> 
 
 	<!-- CSS FOR STYLING THE PAGE -->
 	<style> 
